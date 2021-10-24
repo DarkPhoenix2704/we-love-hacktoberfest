@@ -17,7 +17,7 @@ export const tags: Tag[] = [
   },
   {
     name: "excluded",
-    content: `An "Excluded Project" is a repository which has been blocked by the Hacktoberfest team for being "cheaty" or "spammy".\n\nHacktoberfest is about making valuable contributions to open source, not adding a random algorithm, to a folder, adding a name or similar to get a free t-shirt.\n\nWe recommend searching for things that you use (Such as Freecodecamp, Notion, zsh or a lot more!). You can also search <#735506115810426971> we try to keep this clean of all cheaty repos.`,
+    content: `An "Excluded Project" is a repository which has been blocked by the Hacktoberfest team for being "cheaty" or "spammy".\n\nHacktoberfest is about making valuable contributions to open source, not adding a random algorithm, to a folder, adding a name or similar to get a free t-shirt.\n\nWe recommend searching for things that you use (Such as Freecodecamp, Notion, zsh or a lot more!). You can also search <#735506115810426971> we try to keep this clean of all cheaty repos.\n\nYou can read more about what Hacktoberfest is doing to reduce spam at <https://hacktoberfest.digitalocean.com/resources#reduce-spam>.\n\nFound a repo that you think doesn't follow the values? Report it at <https://hacktoberfest.digitalocean.com/report>.`,
     title: "Why does my PR say 'Excluded Project'?",
     aliases: [],
   },
@@ -51,9 +51,9 @@ export const tags: Tag[] = [
   {
     name: "prs",
     content:
-      "```\nPRs count if:\nSubmitted during the month of October AND (\n  The PR is labelled as hacktoberfest-accepted by a maintainer OR\n  Submitted in a repo with the hacktoberfest topic AND (\n    The PR is merged OR\n    The PR has been approved\n  )\n)\n```",
-    title: "How does a PR count for Hacktoberfest?",
-    aliases: [],
+      "```\nPRs/MRs count if:\nSubmitted during the month of October AND (\n  The PR/MR is labelled as hacktoberfest-accepted by a maintainer OR\n  Submitted in a repo with the hacktoberfest topic AND (\n    The PR/MR is merged OR\n    The PR/MR has been approved\n  )\n)\n```\n\nYou can read more about the specifics of what qualifies a pull/merge request at <https://hacktoberfest.digitalocean.com/resources/participation>.",
+    title: "How does a PR/MR count for Hacktoberfest?",
+    aliases: ["pr", "mrs", "mr"],
   },
   {
     name: "shipping",
@@ -80,6 +80,12 @@ export const tags: Tag[] = [
     name: "started",
     content: "Yes, Hacktoberfest has started.",
     title: "Has Hacktoberfest started?",
+    aliases: [],
+  },
+  {
+    name: "uwu",
+    content: "Oh hello uwu",
+    title: "UWU?",
     aliases: [],
   },
   {

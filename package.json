@@ -1,6 +1,6 @@
 {
   "name": "we-love-matt",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A bot to show Hacktoberfest some love",
   "main": "./prod/index.js",
   "scripts": {
@@ -40,6 +40,7 @@
     "@types/node": "16.7.10",
     "@typescript-eslint/eslint-plugin": "5.1.0",
     "@typescript-eslint/parser": "5.1.0",
+    "axios": "^0.23.0",
     "chai": "4.3.4",
     "eslint": "8.0.1",
     "eslint-config-prettier": "8.3.0",
