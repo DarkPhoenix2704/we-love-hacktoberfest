@@ -17,14 +17,20 @@ export const sendTag = async (message: Message): Promise<void> => {
     if (target === "--list") {
       embed.setTitle("Available Tags");
       embed.setDescription(
-        tags
-          .map(
-            (tag) =>
-              `\`${tag.name}\` ${
-                tag.aliases.length ? ` (\`${tag.aliases.join("/")}\`)` : ""
-              }`
-          )
-          .join(" | ")
+        "These are the available tags and aliases. The tag data are all open source, and you can [make a pull request](https://github.com/nhcarrigan/we-love-hacktoberfest) to update the data."
+      );
+      for (const tag of tags) {
+        embed.addField(
+          tag.name,
+          tag.aliases.length
+            ? tag.aliases.map((el) => `\`${el}\``).join(", ")
+            : "*This tag has no aliases.*",
+          true
+        );
+      }
+      embed.setFooter(
+        "Spread the love? https://donate.nhcarrigan.com",
+        "https://cdn.nhcarrigan.com/profile-transparent.png"
       );
       await message.reply({ embeds: [embed] });
       return;
@@ -38,13 +44,20 @@ export const sendTag = async (message: Message): Promise<void> => {
       embed.setDescription(
         `${target} is not a valid tag! If you want to create or edit a tag, [make a pull request!](https://github.com/nhcarrigan/we-love-hacktoberfest)`
       );
+      embed.setFooter(
+        "Spread the love? https://donate.nhcarrigan.com",
+        "https://cdn.nhcarrigan.com/profile-transparent.png"
+      );
       await message.reply({ embeds: [embed] });
       return;
     }
 
     embed.setTitle(tag.title);
     embed.setDescription(tag.content);
-    embed.setFooter([tag.name, ...tag.aliases].join(", "));
+    embed.setFooter(
+      "Spread the love? https://donate.nhcarrigan.com",
+      "https://cdn.nhcarrigan.com/profile-transparent.png"
+    );
 
     await message.reply({ embeds: [embed] });
   } catch (err) {
