@@ -64,6 +64,13 @@ export const tags: Tag[] = [
     aliases: ["pr", "mrs", "mr"],
   },
   {
+    name: "shipfaster",
+    content:
+      "How to get your Hacktoberfest Swag faster:\n1. Go for a walk\n2. Wait a month, and perform the [Ritual of Cleansing](https://www.youtube.com/watch?v=zL19uMsnpSU)\n3. Realize there's more to life than waiting for a free t-shirt that may or may not arrive arrive soon\n4. Forget about the shirt\n5. Be surprised when your swag finally appears after you've completely forgotten the entire thing\n6. Thank <@541305895544422430> for being so awesome",
+    title: "How do I get my swag faster?",
+    aliases: [],
+  },
+  {
     name: "shipping",
     content:
       "We're working hard to get all the shirts shipped out, though this takes a while considering how many users have won and claimed a T-shirt. We hope to have all the swag shipped out over the next month, though given the global health pandemic we can't promise this\n\nThere is no order to the swag being shipped out, it is random -- there is not a specific country being shipped to first, there is not a specific color/type being shipped first, it is random. We kindly ask that you just have patience as we work hard to get it all shipped out.\n\nOnce your swag has been shipped you'll get an email from our swag provider, Kotis, with tracking information for your package! Please don't email us asking for tracking before you've got the email, it will automatically be sent to you when your swag gets shipped. Once shipped, delivery is expected to take between 8 - 12 weeks, though, again, given the global health pandemic things might be a bit slower than expected.",
@@ -78,16 +85,23 @@ export const tags: Tag[] = [
     aliases: ["tees"],
   },
   {
+    name: "started",
+    content: "No, Hacktoberfest has not started.",
+    title: "Has Hacktoberfest started?",
+    aliases: [],
+  },
+  {
+    name: "track",
+    content:
+      "How to track your Hacktoberfest Swag:\n1. Turn off your computer\n2. Go for a walk\n3. Realise that in the grand scheme of things a free shirt is really not that important\n4. Return home\n5. Turn on your computer\n6. Thank <@541305895544422430> for being so awesome",
+    title: "How do I track my swag?",
+    aliases: [],
+  },
+  {
     name: "trees",
     content:
       "Rather than receive t-shirts as swag, you can choose to have a tree planted in your name and help make Hacktoberfest 2021 more carbon neutral.\nTrees > Tees",
     title: "Is there another option besides a shirt?",
-    aliases: [],
-  },
-  {
-    name: "started",
-    content: "No, Hacktoberfest has not started.",
-    title: "Has Hacktoberfest started?",
     aliases: [],
   },
   {
