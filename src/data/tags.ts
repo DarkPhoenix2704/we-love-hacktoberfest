@@ -2,6 +2,13 @@ import { Tag } from "../interfaces/Tag";
 
 export const tags: Tag[] = [
   {
+    name: "contribute",
+    content:
+      "You can contribute to any repo with the hacktoberfest label, or repos using the `hacktoberfest-accepted` label on individual PRs/MRs. You can find these by searching on either [GitHub](https://github.com/topics/hacktoberfest) or [GitLab](https://gitlab.com/explore/projects/topics/hacktoberfest).\n\nYou can contribute both code and low-code. See also [GitHub's guide](https://opensource.guide/how-to-contribute/) for contributing if you're not sure how. The [Hacktoberfest website](https://hacktoberfest.com/participation/#contributors) also contains some resources to help you get started.",
+    title: "How do I contribute?",
+    aliases: ["contributors", "contributing"],
+  },
+  {
     name: "customs",
     content:
       "We write down a low enough dollar value on the mailed packages that we don't expect any issues with customs tax, but we cannot guarantee that - you might have to pay a small fee depending on your country's import policies. DigitalOcean and Kotis Design will not issue a refund for shipping/duty fees.",
@@ -18,7 +25,7 @@ export const tags: Tag[] = [
   {
     name: "disqualified",
     content:
-      "You have had 2 or more PRs/MRs labelled with `invalid` or `spam` and have been disqualified from participating in Hacktoberfest.\n\nThe Hacktoberfest team cannot control how maintainers choose to label your contributions, and as such we cannot offer support here. You can politely ask the maintainer to remove the labels, but ultimately it is their choice. Please do not harass maintainers.\n\nIf the maintainer chooses to remove the label, let us know so we can re-evaluate your Hacktoberfest account.",
+      "You have had 2 or more PRs/MRs labelled with `spam` and have been disqualified from participating in Hacktoberfest.\n\nThe Hacktoberfest team cannot control how maintainers choose to label your contributions, and as such we cannot offer support here. You can politely ask the maintainer to remove the labels, but ultimately it is their choice. Please do not harass maintainers.\n\nIf the maintainer chooses to remove the label, let us know so we can re-evaluate your Hacktoberfest account. Note that PRs/MRs labelled with `invalid` will not count toward disqualification, but will also not count toward your Hacktoberfest progress.",
     title:
       "I have four completed PRs. Why don't I see the confirmation screen?",
     aliases: ["dq", "spam", "invalid", "spammy", "banned"],
@@ -39,14 +46,21 @@ export const tags: Tag[] = [
   {
     name: "helpers",
     content:
-      "The Hacktoberfest community is successful, in part, due to the efforts of the helpers to keep things safe and welcoming. Helpers not only moderate the community, but answer your questions and help you in your efforts to contribute to open source. Our valued helpers are:\n\n[Matt](https://mattcowley.co.uk/)\n[CatBirby](https://catbirby.com/)\n[LukeOCodes](https://github.com/lukeocodes/)\n[nhcarrigan](https://nhcarrigan.com)\n[Walshy](https://walshy.dev/)",
+      "The Hacktoberfest community is successful, in part, due to the efforts of the helpers to keep things safe and welcoming. Helpers not only moderate the community, but answer your questions and help you in your efforts to contribute to open source. Our valued helpers are:\n\n[Matt](https://mattcowley.co.uk/)\n[LukeOCodes](https://github.com/lukeocodes/)\n[Naomi](https://naomi.lgbt)\n[Walshy](https://walshy.dev/)",
     title: "What is a helper?",
     aliases: ["mods"],
   },
   {
+    name: "language",
+    content:
+      "Want to find a project with a specific language to contribute to?\n\nUse the below to the language of your choice 👇,\nUse this link, and just change the last parameter!\n\n`https://github.com/topics/hacktoberfest?l=<<change_this_to_language>>`\n\nAs an example, if I wanted to find JS projects: [https://github.com/topics/hacktoberfest?l=javascript](https://github.com/topics/hacktoberfest?l=javascript)",
+    title: "How do I find projects in specific languages to Contribute to?",
+    aliases: ["languages"],
+  },
+  {
     name: "matures",
-    content: `The fourteen day "matures" period begins after your PR is approved/merged, and is the Hacktoberfest review period. There is nothing wrong with your PR, you just need to be patient for the 14 days to pass.`,
-    title: "Why does my PR say 'Matures in 14 days'?",
+    content: `The seven day "matures" period begins after your PR is approved/merged, and is the Hacktoberfest review period. There is nothing wrong with your PR, you just need to be patient for the 7 days to pass.`,
+    title: "Why does my PR say 'Matures in 7 days'?",
     aliases: [],
   },
   {
@@ -66,9 +80,16 @@ export const tags: Tag[] = [
   {
     name: "prs",
     content:
-      "```\nPRs/MRs count if:\nSubmitted during the month of October AND (\n  The PR/MR is labelled as hacktoberfest-accepted by a maintainer OR\n  Submitted in a repo with the hacktoberfest topic AND (\n    The PR/MR is merged OR\n    The PR/MR has been approved\n  )\n)\n```\n\nYou can read more about the specifics of what qualifies a pull/merge request at <https://hacktoberfest.digitalocean.com/resources/participation>.",
+      "```\nPRs/MRs count if:\nSubmitted during the month of October AND (\n  The PR/MR is labelled as hacktoberfest-accepted by a maintainer OR\n  Submitted in a repo with the hacktoberfest topic AND (\n    The PR/MR is merged OR\n    The PR/MR has been approved\n  )\n)\n```",
     title: "How does a PR/MR count for Hacktoberfest?",
     aliases: ["pr", "mrs", "mr"],
+  },
+  {
+    name: "pr-count",
+    content:
+      "You need four PRs/MRs accepted between October 1 and October 31 to complete Hacktoberfest",
+    title: "How many PRs/MRs do I need?",
+    aliases: ["mr-count", "count"],
   },
   {
     name: "shipfaster",
@@ -93,7 +114,7 @@ export const tags: Tag[] = [
   },
   {
     name: "started",
-    content: "No, Hacktoberfest has not started.",
+    content: "Yes, Hacktoberfest has started.",
     title: "Has Hacktoberfest started?",
     aliases: [],
   },
@@ -107,7 +128,7 @@ export const tags: Tag[] = [
   {
     name: "trees",
     content:
-      "Rather than receive t-shirts as swag, you can choose to have a tree planted in your name and help make Hacktoberfest 2021 more carbon neutral.\nTrees > Tees",
+      "Rather than receive t-shirts as swag, you can choose to have a tree planted in your name and help make Hacktoberfest more carbon neutral.\nTrees > Tees",
     title: "Is there another option besides a shirt?",
     aliases: [],
   },
@@ -115,6 +136,13 @@ export const tags: Tag[] = [
     name: "uwu",
     content: "Oh hello uwu",
     title: "UWU?",
+    aliases: [],
+  },
+  {
+    name: "win",
+    content:
+      "Hacktoberfest doesn't have any winners or losers. Positive contributions to the open-source community is a win for everyone",
+    title: "Can I/how do I win Hacktoberfest?",
     aliases: [],
   },
 ];
